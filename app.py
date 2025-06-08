@@ -31,7 +31,7 @@ def preprocess_image(image: Image.Image):
 col1, col2, col3 = st.columns([1, 5, 1])
 
 with col2:
-    st.title('💵IDR Currency Classifieer')
+    st.title('💵IDR Currency Classifier')
 
     uploaded_file = st.file_uploader('Upload an image', type=['png', 'jpg', 'jpeg'])
 
