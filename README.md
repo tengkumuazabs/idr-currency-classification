@@ -19,7 +19,7 @@ Note: If the app doesn't load immediately, it might be inactive. Use the "Reboot
 
 ## Model Details
 
-The model was trained on the **[2022 Indonesian Rupiah banknotes dataset](https://www.kaggle.com/datasets/fannyzahrahramadhan/uang-emisi-2022-baru)** available on Kaggle. This ensures accurate recognition of the most recent banknote designs.
+The model was trained on the **[2022 Indonesian Rupiah banknotes dataset](https://www.kaggle.com/datasets/fannyzahrahramadhan/uang-emisi-2022-baru)** which is available on Kaggle. This ensures accurate recognition of the most recent banknote designs.
 
 ## Getting Started
 
