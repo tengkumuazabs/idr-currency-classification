@@ -26,7 +26,7 @@ The model was trained on the **[2022 Indonesian Rupiah banknotes dataset](https:
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/yourusername/idr-currency-classifier.git
+git clone https://github.com/tengkumuazabs/idr-currency-classification.git
 cd idr-currency-classifier
 ```
 
