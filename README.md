@@ -2,7 +2,7 @@
 
 This is a machine learning web app built with Streamlit and TensorFlow to classify Indonesian Rupiah banknotes from uploaded images.
 
-## Live App (Streamlit Version)
+## Live App
 
 Visit the app: [idr-currency-classification.streamlit.app](idr-currency-classification.streamlit.app)
 
