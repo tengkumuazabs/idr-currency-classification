@@ -4,7 +4,7 @@ This is a machine learning web app built with Streamlit and TensorFlow to classi
 
 ## Live App
 
-Visit the app: [idr-currency-classification.streamlit.app](idr-currency-classification.streamlit.app)
+Visit the app: [idr-currency-classification.streamlit.app](https://idr-currency-classification.streamlit.app/)
 
 Note: If the app doesn't load immediately, it might be inactive. Use the "Reboot" button on Streamlit.
 
