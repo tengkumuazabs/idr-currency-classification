@@ -6,7 +6,7 @@ This is a machine learning web app built with Streamlit and TensorFlow to classi
 
 Visit the app: [idr-currency-classification.streamlit.app](idr-currency-classification.streamlit.app)
 
-Note: If the app doesn't load immediately, it might be inactive. Use the "Reboot" button on Streamlit sharing or redeploy to restart it.
+Note: If the app doesn't load immediately, it might be inactive. Use the "Reboot" button on Streamlit.
 
 ## Features
 
@@ -44,8 +44,6 @@ pip install -r requirements.txt
 ```bash
 streamlit run app.py
 ```
-
-
 
 ## Inputs and Output
 - Upload an image of an Indonesian Rupiah banknote (png, jpg, jpeg).
