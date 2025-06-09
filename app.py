@@ -3,6 +3,8 @@ import tensorflow as tf
 import numpy as np
 from dotenv import load_dotenv
 from PIL import Image
+import requests
+import io
 import os
 
 # load the model
@@ -33,12 +35,27 @@ col1, col2, col3 = st.columns([1, 5, 1])
 with col2:
     st.title('💵IDR Currency Classifier')
 
-    uploaded_file = st.file_uploader('Upload an image', type=['png', 'jpg', 'jpeg'])
+    # image input options
+    tab1, tab2 = st.tabs(['📁 Upload Image', '🌐 Image URL'])
 
-    if uploaded_file is not None:
-        img = Image.open(uploaded_file).convert('RGB')
+    img = None
+
+    with tab1:
+        uploaded_file = st.file_uploader('Upload an image', type=['png', 'jpg', 'jpeg'])
+        if uploaded_file is not None:
+            img = Image.open(uploaded_file).convert('RGB')
+
+    with tab2:
+        image_url = st.text_input('Enter image URL (.png/.jpg/.jpeg):')
+        if st.button('Predict'):
+            try:
+                response = requests.get(image_url)
+                img = Image.open(io.BytesIO(response.content)).convert('RGB')
+            except Exception as e:
+                st.error(f'Error loading the image from URL: {e}')
+
+    if img:
         st.image(img, caption='Uploaded image', use_container_width=True)
-    
         with st.container():
             input_arr = preprocess_image(img)
             pred = model.predict(input_arr)
